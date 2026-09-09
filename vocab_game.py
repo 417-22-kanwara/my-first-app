@@ -79,7 +79,7 @@ def show_result_dialog(ans1, ans2):
 st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
 
 # 2. แถบแสดงเวลานับถอยหลัง
-    if "start" in st.session_state and not st.session_state.get("is_ended", False):
+if "start" in st.session_state and not st.session_state.get("is_ended", False):
     time_left = int(30 - (time.time() - st.session_state.start))
 
     if time_left > 0:
@@ -104,7 +104,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 2: Cats love to eat `C _ c _ n _ t`. 🐟",
+    "ข้อ 2: Cats love to eat `C _ c _ n _ t`. 🥥",
     value=st.session_state.ans4_val,
 )
 
