@@ -88,7 +88,7 @@ st.button("🎮 เริ่มเล่นเกม", on_click=reset_game)
         st.session_state.is_ended = True
         st.rerun()
 
-    st.divider()
+st.divider()
 
 # 3. ช่องรับคำตอบ (ใช้ value ผูกกับตัวแปรตรงๆ เพื่อสั่งเคลียร์ได้)
 ans1 = st.text_input(
