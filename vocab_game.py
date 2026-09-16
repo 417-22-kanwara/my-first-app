@@ -34,8 +34,6 @@ def show_result_dialog(ans1, ans2):
 
     u_ans1 = ans1.strip().lower()
     u_ans2 = ans2.strip().lower()
-    u_ans3 = ans3.strip().lower()
-    u_ans4 = ans4.strip().lower()
   
     # ตรวจข้อ 1
     if u_ans1 == "apple":
@@ -104,7 +102,7 @@ ans3 = st.text_input(
     value=st.session_state.ans3_val,
 )
 ans4 = st.text_input(
-    "ข้อ 2: Cats love to eat `C _ c _ n _ t`. 🥥",
+    "ข้อ 2: Cats love to eat `C o c _ n _ t`. 🥥",
     value=st.session_state.ans4_val,
 )
 
